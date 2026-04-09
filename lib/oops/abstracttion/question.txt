@@ -1,0 +1,36 @@
+Question: Shape Calculator using Abstract Class
+
+Create a Shape Calculator in Dart using Abstract Class.
+
+1. Create an abstract class Shape with:
+   - Two abstract methods:
+     - calculateArea() → returns a double
+     - calculatePerimeter() → returns a double
+   - Two concrete methods:
+     - printShape() → prints the area and perimeter by calling the abstract methods
+     - isLargerThan(Shape other) → returns true if the current shape's area is greater than the other shape's area
+
+2. Create a child class Circle that extends Shape with:
+   - A property radius (double)
+   - Implement calculateArea() → 3.14 * radius * radius
+   - Implement calculatePerimeter() → 2 * 3.14 * radius
+
+3. Create another child class Rectangle that extends Shape with:
+   - Properties length (double) and width (double)
+   - Implement calculateArea() → length * width
+   - Implement calculatePerimeter() → 2 * (length + width)
+
+4. In main():
+   - Create a Circle object with radius 7 and call printShape()
+   - Create a Rectangle object with length 10 and width 5 and call printShape()
+   - Compare both shapes using isLargerThan() and print the result
+
+Expected Output:
+Area: 153.86
+Perimeter: 43.96
+---
+Area: 50.0
+Perimeter: 30.0
+---
+Is Circle larger than Rectangle? true
+

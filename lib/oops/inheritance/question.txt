@@ -1,0 +1,28 @@
+Question: Faculty Salary System using Inheritance
+
+Create a Faculty Management System in Dart using Inheritance.
+
+1. Create a parent class Faculty with the following properties:
+   - name (String)
+   - age (int)
+   - address (String)
+   - A method displayDetails() that returns all details as a single string.
+
+2. Create a child class FullTimeFaculty that extends Faculty with:
+   - An additional property monthlySalary (double)
+   - A method calculateYearlySalary() that returns the yearly salary (monthly × 12)
+
+3. Create another child class PartTimeFaculty that extends Faculty with:
+   - Additional properties: hourlySalary (double) and hoursWorkedPerWeek (int)
+   - A method calculateWeeklySalary() that returns weekly salary (hourly × hours per week)
+   - A method calculateYearlySalary() that returns yearly salary (weekly × 52)
+
+4. In main():
+   - Create a FullTimeFaculty object and print the yearly salary
+   - Create a PartTimeFaculty object and print the details, weekly salary, and yearly salary
+
+Expected Output:
+1440000.0
+Rahul 28 Mumbai
+Weekly Salary: 10000.0
+Yearly Salary: 520000.0
